@@ -18,7 +18,7 @@ export const experiencesPreset: Experience[] = [
     companyName: 'Tech Solutions',
     startDate: '2022-01-01',
     endDate: '2023-01-01',
-    description: 'Développement d\'applications web en utilisant React et Node.js.'
+    description: 'Développement d\'applications web en utilisant NEXTJS.'
   },
   {
     id: 'uuid-2',
@@ -37,13 +37,12 @@ export const educationsPreset: Education[] = [
     school: 'Edu',
     startDate: '2015-09-01',
     endDate: '2018-06-01',
-    description: 'Spécialisation en développement web et bases de données.'
+    description: 'Développement web et bases de données.'
   }
 ];
 
 export const skillsPreset: Skill[] = [
-  { id: 'uuid-4', name: 'React.js' },
-  { id: 'uuid-5', name: 'Node.js' }
+  { id: 'uuid-4', name: 'NextJS' },
 ];
 
 export const languagesPreset: Language[] = [
@@ -53,5 +52,5 @@ export const languagesPreset: Language[] = [
 
 export const hobbiesPreset: Hobby[] = [
   { id: 'uuid-8', name: 'Voyager' },
-  { id: 'uuid-9', name: 'Lire des livres' }
+  { id: 'uuid-9', name: 'Lecture' }
 ];

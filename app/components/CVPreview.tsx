@@ -70,7 +70,7 @@ const CVPreview: React.FC<Props> = ({ personalDetails, file, theme, experiences,
               width={300}
               height={300}
               className='w-full h-full rounded-lg object-cover'
-              alt="Picture of the author"
+              alt="Picture"
               onLoadingComplete={() => {
                 if (typeof file !== 'string') {
                   URL.revokeObjectURL(URL.createObjectURL(file))

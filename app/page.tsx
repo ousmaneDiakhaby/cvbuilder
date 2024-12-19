@@ -344,12 +344,12 @@ export default function Home() {
         <div className="hero bg-base-200 min-h-screen">
           <div className="hero-content text-center">
             <div className="max-w-md">
-              <h1 className="text-3xl font-bold">Désolé, le CV Builder est uniquement accessible sur ordinateur.</h1>
+              <h1 className="text-3xl font-bold">Désolé, CV Builder est uniquement accessible sur ordinateur.</h1>
               <Image
                 src="/sad-sorry.gif"
                 width={500}
                 height={500}
-                alt="Picture of the author"
+                alt="sorry"
                 className="mx-auto my-6"
               />
               <p className="py-6">
