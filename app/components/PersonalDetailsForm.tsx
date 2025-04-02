@@ -12,7 +12,7 @@ const PersonalDetailsForm: React.FC<Props> = ({personalDetails, setPersonalDetai
     setPersonalDetails({...personalDetails, [field]: e.target.value});
   }
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>, field: keyof PersonalDetails) => {
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
     if (selectedFile) {
       setFile(selectedFile);
@@ -58,7 +58,7 @@ const PersonalDetailsForm: React.FC<Props> = ({personalDetails, setPersonalDetai
           type="file"
           accept="image/*"
           placeholder="Photo"
-          onChange={(e) => handleFileChange(e, 'photoUrl')}
+          onChange={(e) => handleFileChange(e)}
           className="file-input file-input-bordered w-full file-input-primary"
         />
 

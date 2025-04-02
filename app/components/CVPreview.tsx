@@ -13,6 +13,7 @@ type Props = {
   skills: Skill[];
   hobbies: Hobby[];
   download?: boolean ;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ref?:any
 }
 
@@ -72,9 +73,7 @@ const CVPreview: React.FC<Props> = ({ personalDetails, file, theme, experiences,
               className='w-full h-full rounded-lg object-cover'
               alt="Picture"
               onLoadingComplete={() => {
-                if (typeof file !== 'string') {
-                  URL.revokeObjectURL(URL.createObjectURL(file))
-                }
+                URL.revokeObjectURL(URL.createObjectURL(file))
               }}
             />
           )}
